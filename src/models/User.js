@@ -30,7 +30,6 @@ const userSchema = new mongoose.Schema({
 });
 
 // Index for better query performance
-userSchema.index({ userId: 1 });
 userSchema.index({ isOnline: 1 });
 
 module.exports = mongoose.model('User', userSchema);
